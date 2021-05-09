@@ -50,4 +50,9 @@ public class MemberController {
         LMember member = memberService.getRedis(key);
         return Result.ok().data("数据",member);
     }
+
+    @GetMapping("test")
+    public Result test001(){
+        return Result.ok();
+    }
 }
